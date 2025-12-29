@@ -1,0 +1,9 @@
+name: Global Resonance Sync
+on: [push]
+jobs:
+  pulse:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - run: Write-Host "Resonance: 388.87 Hz" -shell powershell
